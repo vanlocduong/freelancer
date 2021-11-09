@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "GreycliffCF";
+  src: url(../fonts/OTF/GreycliffCF-Regular.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-RegularOblique";
+  src: url(../fonts/OTF/GreycliffCF-RegularOblique.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-Bold";
+  src: url(../fonts/OTF/GreycliffCF-Bold.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-BoldOblique";
+  src: url(../fonts/OTF/GreycliffCF-BoldOblique.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-DemiBold";
+  src: url(../fonts/OTF/GreycliffCF-DemiBold.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-ExtraBold";
+  src: url(../fonts/OTF/GreycliffCF-ExtraBold.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-ExtraBoldOblique";
+  src: url(../fonts/OTF/GreycliffCF-ExtraBoldOblique.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-Heavy";
+  src: url(../fonts/OTF/GreycliffCF-Heavy.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-HeavyOblique";
+  src: url(../fonts/OTF/GreycliffCF-HeavyOblique.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-Medium";
+  src: url(../fonts/OTF/GreycliffCF-Medium.otf);
+}
+@font-face {
+  font-family: "GreycliffCF-MediumOblique";
+  src: url(../fonts/OTF/GreycliffCF-MediumOblique.otf);
+}
+body{
+  background: #b5dbd1;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.header {
+  background: rgb(255 255 255 / 70%);
+  position: fixed;
+  width: 100%;
+}
+.ctn_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctn_header .logo {
+  width: 30%;
+  padding: 25px 20px;
+}
+.ctn_header .hd_menu ul {
+  display: flex;
+  justify-content: end;
+}
+.ctn_header .hd_menu {
+  width: 70%;
+}
+.ctn_header .hd_menu li {
+  padding: 20px;
+  position: relative;
+}
+.hd_menu li::after {
+  content: ".";
+  color: #ec725b;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  font-size: 26px;
+}
+.hd_menu li:last-child:after {
+  display: none;
+}
+.hd_menu a {
+  color: #ec725b;
+  font-size: 26px;
+  font-family: "GreycliffCF";
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 1225px;
+  background-color: #b5dbd1;
+  background-image: url(../img/header-banner.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.contract_section {
+  padding: 20px;
+  background-color: #e8e8e8;
+  text-align: center;
+  color: #010101;
+}
+.contract_section p {
+  font-size: 26px;
+  font-family: "GreycliffCF";
+}
+.contract_section span {
+  font-weight: bold;
+  font-family: "GreycliffCF-Bold";
+}
+.section_gameplay {
+  padding: 60px 0;
+  text-align: center
+}
+.section_nftship {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #e8e8e8;
+}
+.section_roadmap {
+  padding: 60px 0;
+  text-align: center
+}
+.footer {
+  background-color: #e8e8e8;
+  text-align: center;
+  position: relative;
+}
+.ft_menu a {
+  font-size: 24px;
+  color: #000;
+  font-family: "GreycliffCF";
+}
+.ft_menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.ft_menu li {
+  padding: 26px;
+  position: relative;
+}
+.ft_menu li::after {
+  content: ".";
+  position: absolute;
+  top: 20%;
+  right: 0;
+  font-size: 26px;
+}
+.ft_menu li:last-child:after {
+  display: none;
+}
+.social {
+  position: fixed;
+  top: 70%;
+  left: 20px;
+}
+.social a {
+  color: #fff;
+  background-color: #ec725b;
+  padding: 10px;
+  display: block;
+  font-size: 30px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.btn_play {
+  text-align: center;
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+  .banner {
+    min-height: auto;
+    height: 1000px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .ctn_header {
+    display: block;
+  }
+  .ctn_header .hd_menu {
+    width: 100%;
+  }
+  .ctn_header .hd_menu li {
+    padding: 10px 20px;
+  }
+  .ctn_header .logo {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    min-height: auto;
+    height: 700px;
+  }
+  .logo img {
+    width: 25%;
+  }
+}
